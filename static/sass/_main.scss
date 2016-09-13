@@ -1,0 +1,148 @@
+/* HEADER Styling */
+header {
+  padding: 15px 10px 12px 0px;
+  border-bottom: 3px solid $color-primary;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+  left: 0;
+
+  .logo {
+    float: left;
+    margin: 10px;
+  }
+
+  .dropdown {
+    float: right;
+    margin-right: 15px;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    text-align: left;
+    .dropbtn {
+      background-color: $color-primary;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: $color-form-bg;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      a {
+        color: $color-font;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+
+    &:hover .dropdown-content {
+      display: block;
+    }
+    &:hover .dropbtn {
+      background-color: $color-pbutton-hover;
+    }
+
+  }
+}
+
+/* Main Body Wrapper styling */
+.wrapper {
+  color: $color-font;
+  margin-top: 100px;
+  h1 {
+    color: $color-font;
+    font-size: 20px;
+  }
+  #form-container {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 75px;
+  }
+
+  #btn_add {
+    position: absolute;
+    left: 9px;
+    z-index: 1;
+  }
+}
+
+.preloader {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  padding: 10px 0;
+  top: 0;
+  color: #555;
+  img {
+    width: 45px;
+  }
+}
+
+.delete-specific {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+}
+.delete-record {
+  @include linx-bg(#ef5919, #FFF);
+}
+.edit-record {
+  @include linx-bg(#0c959a, #FFF);
+  i {
+    margin-right: -3px;
+  }
+}
+.timer-record {
+  @include linx-bg(#1385e5, #FFF);
+}
+
+.status-green {
+  @include linx($color-secondary);
+  i:before {
+    content: "\f058";
+  }
+}
+.status-gray {
+  @include linx(#BDC3C6);
+  i:before {
+    content: "\f057";
+  }
+}
+
+/* Datatable override Styles */
+.dataTables_filter {
+  input[type="search"] {
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    color: #333;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+}
+.dataTable {
+  tbody tr.selected {
+    background-color: #e7f5eb !important;
+    & > .sorting_1 {
+      background-color: #e7f5eb !important;
+    }
+  }
+  
+  .change-status {
+    font-size: 17px;
+  }
+}

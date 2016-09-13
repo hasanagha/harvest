@@ -1,0 +1,31 @@
+// Mixin: links colors & background color
+// Description: clearfix element
+// Usage: @include linx(color)
+
+@mixin linx-bg ($bgcolor, $color) {
+	outline: none;
+	background-color: $bgcolor;
+	&:hover {
+	  background-color: darken($bgcolor, 10%);
+	}
+	&:visited {
+	  background-color: darken($bgcolor, 20%);
+	}
+	&:active {
+	  background-color: darken($bgcolor, 5%);
+	}
+}
+
+@mixin linx ($color) {
+	outline: none;
+	color: $color;
+	&:hover {
+	  color: darken($color, 10%);
+	}
+	&:visited {
+	  color: darken($color, 20%);
+	}
+	&:active {
+	  color: darken($color, 5%);
+	}
+}

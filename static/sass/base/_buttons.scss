@@ -1,0 +1,72 @@
+// This will have all the common button classes ...
+.button
+{
+    position: relative;
+    padding: 10px 27px;
+    color: #FFF;
+    margin: 0 auto;
+    background: $color-primary;
+    font-size: 15px;
+    text-align: center;
+    font-style: normal;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+    	background: #109177;
+    }
+}
+
+.button-primary
+{
+    background: $color-primary;
+    &:hover {
+    	background: $color-pbutton-hover;
+    }
+}
+
+.button-secondary
+{
+    background: $color-secondary;
+    &:hover {
+    	background: $color-sbutton-hover;
+    }
+}
+
+.button-cancel
+{
+    background: #d00505;
+    border-color: #d00505;
+    &:hover {
+        background: #d00505;
+        border-color: #d00505;
+    }
+}
+
+.button-large {
+	width: 100%;
+}
+.button-medium {
+	width: 95%;
+}
+.button-xmedium {
+	width: 70%;
+}
+
+.button-small {
+	width: 50%;
+}
+
+.button-xsmall {
+	width: 20%;
+}
+
+.button-action {
+    padding: 10px 12px;
+    color: #FFF;
+    border-radius: 6px;
+    margin: 3px;
+    text-decoration: none;
+}

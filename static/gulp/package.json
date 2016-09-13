@@ -1,0 +1,16 @@
+{
+  "name": "d6",
+  "version": "0.0.2",
+  "description": "Task runner for d6",
+  "author": "Hasan Agha",
+  "license": "",
+  "devDependencies": {
+    "browser-sync": "2.13.0",
+    "gulp": "3.9.1",
+    "gulp-autoprefixer": "3.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "1.1.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "2.3.2"
+  }
+}
